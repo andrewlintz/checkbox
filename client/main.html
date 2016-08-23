@@ -1,0 +1,22 @@
+<head>
+  <title>check</title>
+</head>
+
+<body>
+  {{> showList}}
+</body>
+
+<template name="showList">
+  {{#each all}}
+    {{> item}}
+  {{/each}}
+</template>
+
+<template name="item">
+  <div>
+    {{name}}
+    <input type="checkbox" name="cb1" checked={{cb1}}>
+    <input type="checkbox" name="cb2" checked={{cb2}}>
+    <input type="checkbox" name="cb3" checked={{cb3}}>
+  </div>
+</template>
